@@ -48,6 +48,15 @@ Hooks.once("item-piles-ready", async () => {
                     items.push(item.data)
                 }
             }
+        },
+
+        "ITEM_TRANSFORMER": async (itemData) => {
+            if (itemData.type === "Transfer") {
+                return itemData.data;
+            }
+            else {
+                return itemData;
+            }
         }
     }
 
@@ -57,7 +66,7 @@ Hooks.once("item-piles-ready", async () => {
     const VERSIONS = {
         "1.906": {
             ...baseConfig,
-            "VERSION": "0.0.3"
+            "VERSION": "0.0.4"
         }
     }
 
