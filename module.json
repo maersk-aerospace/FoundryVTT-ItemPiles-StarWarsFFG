@@ -1,0 +1,27 @@
+{
+    "id": "itempilesstarwarsffg",
+    "title": "Item Piles: Star Wars FFG",
+    "description": "Adds support for the Star Wars FFG system within the Item Piles module.",
+    "authors": [{
+            "name": "Maersk Aerospace",
+            "url": "https://github.com/maersk-aerospace"
+    }],
+    "url": "https://github.com/maersk-aerospace/FoundryVTT-ItemPiles-StarWarsFFG",
+
+    "esmodules": [
+        "modules/pilesconfig.js"
+    ],
+
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "12",
+        "maximum": "13"
+    },
+    "relationships": {
+        "requires": [{
+            "id": "item-piles",
+            "type": "module",
+            "manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/latest/download/module.json"
+        }]
+    }
+}
