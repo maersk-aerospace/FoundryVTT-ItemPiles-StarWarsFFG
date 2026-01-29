@@ -55,9 +55,9 @@ Hooks.once("item-piles-ready", async () => {
     // this lets us run over old configs with new versions
     // see https://fantasycomputer.works/FoundryVTT-ItemPiles/#/contributing-to-item-piles?id=adding-system-support
     const VERSIONS = {
-        "0.0.1": {
+        "1.906": {
             ...baseConfig,
-            "VERSION": "0.0.1"
+            "VERSION": "0.0.3"
         }
     }
 
