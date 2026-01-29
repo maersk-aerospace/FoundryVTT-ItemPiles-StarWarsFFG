@@ -3,8 +3,8 @@
     "title": "Item Piles: Star Wars FFG",
     "description": "Adds support for the Star Wars FFG system within the Item Piles module.",
     "authors": [{
-            "name": "Maersk Aerospace",
-            "url": "https://github.com/maersk-aerospace"
+        "name": "Maersk Aerospace",
+        "url": "https://github.com/maersk-aerospace"
     }],
     "url": "https://github.com/maersk-aerospace/FoundryVTT-ItemPiles-StarWarsFFG",
 
