@@ -40,7 +40,7 @@ Hooks.once("item-piles-ready", async () => {
 
         // i have no idea how to make this work correctly, we're just shooting for the stars
         "ITEM_TYPE_HANDLERS": {
-            "transfer": {
+            "Transfer": {
                 [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.CONTENTS]: ({ item }) => {
                     return item.data
                 },
