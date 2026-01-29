@@ -36,7 +36,19 @@ Hooks.once("item-piles-ready", async () => {
                 "index": 0,
                 "id": "system.stats.credits.value"
             }
-        ]
+        ],
+
+        // i have no idea how to make this work correctly, we're just shooting for the stars
+        "ITEM_TYPE_HANDLERS": {
+            "transfer": {
+                [game.itempiles.CONSTANTS.ITEM_TYPE_METHODS.TRANSFER]: ({ item, items, raw = false } = {}) => {
+                    return [
+                        ...items,
+                        item.data
+                    ]
+                }
+            }
+        }
     }
 
     // define versions object, extends the base config
